@@ -4,8 +4,8 @@ services:
     build: .
     container_name: css_container
     volumes:
-      - /media/enka/css:/css
-      - ./screenshots:/screenshots
+      - ${CSS_DIR}:/css # path to counter-strike source directory
+      - ${SCREENSHOT_DIR}:/screenshots # path to screenshots directory
     restart: unless-stopped
   
   discord_bot:
