@@ -1,0 +1,18 @@
+version: '3'
+services:
+  css_container:
+    build: .
+    container_name: css_container
+    volumes:
+      - /media/enka/css:/css
+      - ./screenshots:/screenshots
+    restart: unless-stopped
+  
+  discord_bot:
+    build: ./bot
+    volumes:
+      - ./screenshots:/app/screenshots
+      - ./maplist.txt:/app/maplist.txt
+    restart: unless-stopped
+    depends_on:
+      - css_container
