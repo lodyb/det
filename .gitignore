@@ -1,5 +1,5 @@
-bot/node_modules
-bot/.env
-bot/*.js
 screenshots
 .env
+bot/node_modules
+bot/.env
+maplist.txt

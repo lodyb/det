@@ -1,18 +1,11 @@
 version: '3'
 services:
   css_container:
-    build: .
+    build: 
+      context: .
+      dockerfile: Dockerfile
     container_name: css_container
     volumes:
       - ${CSS_DIR}:/css # path to counter-strike source directory
-      - ${SCREENSHOT_DIR}:/screenshots # path to screenshots directory
+      - ${SCREENSHOT_DIR}:/screenshots
     restart: unless-stopped
-  
-  discord_bot:
-    build: ./bot
-    volumes:
-      - ./screenshots:/app/screenshots
-      - ./maplist.txt:/app/maplist.txt
-    restart: unless-stopped
-    depends_on:
-      - css_container

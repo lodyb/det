@@ -3,17 +3,17 @@
     "version": "1.0.0",
     "main": "dist/index.js",
     "scripts": {
-      "build": "tsc",
-      "start": "node dist/index.js"
+        "start": "ts-node bot.ts"
     },
     "dependencies": {
-      "discord.js": "^14.7.1",
-      "@discordjs/rest": "^1.5.0",
-      "discord-api-types": "^0.37.35",
-      "dotenv": "^16.0.3"
+        "@discordjs/rest": "^1.7.1",
+        "discord-api-types": "^0.37.119",
+        "discord.js": "^14.18.0",
+        "dotenv": "^16.4.7"
     },
     "devDependencies": {
-      "@types/node": "^18.11.18",
-      "typescript": "^4.9.4"
+        "@types/node": "^18.19.80",
+        "ts-node": "^10.9.2",
+        "typescript": "^4.9.5"
     }
-  }
+}

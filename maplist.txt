@@ -280,7 +280,6 @@ surf_map_h
 surf_map_njv
 surf_marah
 surf_marbleblast_intermediate
-up
 surf_masonry
 surf_mellow
 surf_meme
